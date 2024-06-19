@@ -12,7 +12,8 @@ runs:
   steps:
   - name: Install flatbuffers
     run: |
-      sudo apt-get install -y flatbuffers-compiler
+      sudo apt-get update
+      sudo apt-get install -y flatbuffers-compiler=1.12.1~git20200711.33e2d80+dfsg1-0.6
       flatc --version
     shell: bash
   - name: set up JDK

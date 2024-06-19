@@ -10,6 +10,10 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+    implementation("com.google.flatbuffers:flatbuffers-java:1.12.0")
+}
+
 publishing {
     publications {
         create<MavenPublication>("mavenJava") {
