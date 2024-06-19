@@ -1,2 +1,4 @@
 src/
 *.swp
+.gradle
+build
