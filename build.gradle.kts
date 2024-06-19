@@ -3,7 +3,7 @@ plugins {
     `maven-publish`
 }
 
-group = "com.github.topherbuckley"
+group = "jp.oist.abcvlib.core.learning"
 version = "0.0.1"
 
 repositories {
