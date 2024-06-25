@@ -1,4 +1,4 @@
 #!/bin/bash
 
-flatc -b -j -o src/main/java/ episode.fbs
-flatc -b -p -o src/main/python/ --force-empty-vectors episode.fbs
+flatc -b -j -o src/java/ episode.fbs
+flatc -b -p -o src/python/ --force-empty-vectors episode.fbs
