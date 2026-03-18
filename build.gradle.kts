@@ -4,7 +4,13 @@ plugins {
 }
 
 group = "jp.oist.abcvlib.core.learning"
-version = "0.0.1"
+version = "0.0.2"
+
+sourceSets {
+    main {
+        java.srcDirs("src/java")
+    }
+}
 
 repositories {
     mavenCentral()
@@ -24,7 +30,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/topherbuckley/smartphone-robot-flatbuffers")
+            url = uri("https://maven.pkg.github.com/oist/smartphone-robot-flatbuffers")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
